@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import axios from 'axios';
 import UserCard from './Components/UserCard';
+import FollowerCard from './Components/FollowerCard';
+
 
 
 class App extends React.Component {
@@ -34,6 +36,9 @@ class App extends React.Component {
         <div className="App">
           <h1>Github Users</h1>
           <UserCard user={this.state.user} />
+          <br />
+          <h1 className="followers-heading">Followers</h1>
+          <FollowerCard followers={this.state.followers} />
         </div>
       )
     }
