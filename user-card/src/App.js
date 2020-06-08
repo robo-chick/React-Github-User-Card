@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import axios from 'axios';
 import UserCard from './Components/UserCard';
 import FollowerCard from './Components/FollowerCard';
@@ -34,11 +33,19 @@ class App extends React.Component {
     render() {
       return (
         <div className="App">
-          <h1>Github Users</h1>
+          <div className="heading">
+            <h1>Github User Card</h1>
+            </div>
+          <div className="user-container">
           <UserCard user={this.state.user} />
+          </div>
           <br />
-          <h1 className="followers-heading">Followers</h1>
+          <div className="follower-heading">
+          <h1>Followers</h1>
+          </div>
+          <div className="follower-container">
           <FollowerCard followers={this.state.followers} />
+          </div>        
         </div>
       )
     }
