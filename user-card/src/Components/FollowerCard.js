@@ -8,7 +8,7 @@ class FollowerCard extends React.Component {
             <div className="follower-card-container">
                 {this.props.followers.map(follower => 
                     <div className="follower-card">
-                        <img width="75%" src={follower.avatar_url} />
+                        <img width="75%" src={follower.avatar_url} alt="github follower profile"/>
                         <p className="login">Username: {follower.login}</p>
                     </div>
                     )}
